@@ -1,79 +1,290 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="60fps : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
     <title>60fps</title>
-  </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1274, user-scalable=no">
+    <link rel="stylesheet" href="shower/themes/ok/styles/screen.css">
+    <!--
+         To apply styles to the certain slides
+         set slide ID to get needed elements
+         -->
+    <style>
+        #Cover h2 {
+            margin-top: -80px;
+            font-size:120px;
+            }
 
-  <body>
+        #Cover h2 span {
+            font-size:75px;
+            }
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jurispukitis/60fps">View on GitHub</a>
+        #Cover .logo {
+            width:400px;
+            margin-bottom: 40px;
+            }
+        #pointerOverlay {
+            position: fixed;
+            top: 0; right: 0; left: 0; bottom: 0;
+            visibility: hidden;
+            pointer-events: none;
+            }
+            #pointerOverlay.__auto {
+                visibility: visible;
+                pointer-events: auto;
+                }
+    </style>
+</head>
+<body class="list">
 
-          <h1 id="project_title">60fps</h1>
-          <h2 id="project_tagline"></h2>
+<header class="caption">
+    <h1>60fps</h1>
+    <p><a href="https://twitter.com/jur4eg">Юрис Пукитис</a>, <a href="http://v.ok.ru/">Одноклассники</a></p>
+</header>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jurispukitis/60fps/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/jurispukitis/60fps/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<section class="slide shout brand-bg" id="Cover"><div>
+    <h2 class="bold light"><div style="position: relative">60 FPS</div></h2>
+    <img src="shower/themes/ok/images/ok-logo-or.svg" class="logo place b">
+</div></section>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<section class="slide cover" style="text-align: center"><div style="left: 45px; top: 80px;">
+    <img src="i/projects/p1.png" width="300"/>
+    <img src="i/projects/p2.png" width="300" style="left: 300px;"/>
+    <img src="i/projects/p3.png" width="300" style="left: 600px;"/>
+    <img src="i/projects/p4.png" width="300" style="top: 180px;"/>
+    <img src="i/projects/p5.png" width="300" style="top: 254px;left: 600px;"/>
+    <img src="i/projects/p6.png" width="300" style="top: 140px;left: 300px;"/>
+</div></section>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<section class="slide"><div>
+    <h2>Почему важен перформенс</h2>
+    <ul class="fz-l">
+        <li>Все больше моб девайсов</li>
+        <li class="next">Прямое влияние на восприятие</li>
+        <li class="next">Оставь пользователя довольным</li>
+        <li class="next"><a href="http://siliconrus.com/2014/05/slow-internet/" target="_blank">Скорость загрузки и заработок</a></li>
+        <li class="next"><a href="http://www.mcrinc.com/Documents/Newsletters/201110_why_web_performance_matters.pdf" target="_blank">Подробно..</a></li>
+    </ul>
+</div></section>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<section class="slide"><div>
+    <h2>Фокус</h2>
+    <ul style="font-size: 22px">
+        <li>Роберт Миллер - "Время отклика при общении человека с компьютером" 1968 год. </li>
+        <li>от 0.1 до 0.2 секунды - Пользователь воспринимает отклик как мгновенный</li>
+        <li>от 1 до 5 секунд - Пользователь чувствует что свободно оперирует информацией</li>
+        <li>от 5 до 10 секунд - Пользователь прикладывает усилие чтобы остаться в фокусе.</li>
+        <li>более 10 секунд - Пользователь теряет фокус</li>
+    </ul>
+</div></section>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<section class="slide"><div>
+    <h2>Доход</h2>
+    <ul style="font-size: 22px">
+        <li>Bing - 2c задержки уменьшили доход на 4.3% на каждого пользователя</li>
+        <li>Google - 400мс задержки уменьшили кол-во поисковых запросов на 0.59%</li>
+        <li>Yahoo! - 400мс задержки уменьшили трафик на 5-9%</li>
+        <li>Mozilla - уменьшила на 2.2с время загрузки главной страницы, что привело к увеличению скачиваний на 15.4%</li>
+        <li>Сайт Барака Обамы - сделав сайт быстрее на 60%, кол-во пожертвований выросло на 14%</li>
+    </ul>
+</div></section>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<section class="slide cover"><div>
+    <img src="i/money.jpg" width="100%"/>
+</div></section>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<section class="slide shout"><div>
+    <h2 style="font-size: 130px;">10 -> 60 FPS</h2>
+</div></section>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<section class="slide"><div>
+    <h2>Проблемы</h2>
+    <ul class="fz-l">
+        <li>Лишние ховеры и анимации</li>
+        <li class="next">Лишние JavaScript-функции (в том числе Ajax-запросы)</li>
+        <li class="next">Подвисает браузер</li>
+        <li class="next">Негативный эффект</li>
+    </ul>
+</div></section>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<section class="slide"><div>
+    <h2>Блокировка ховер ивентов</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+    <ul class="fz-l">
+        <li><a href="http://www.lonelyplanet.com/" target="_blank">lonelyplanet.com</a>, Recalculate style</li>
+    </ul>
+    <pre style="font-size: 22px;">
+        <br/>
+        <code style="line-height: 18px;">&lt;body <mark>style="pointer-events: none/auto"</mark>&gt;...&lt;/body&gt;</code>
+    </pre>
+</div></section>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<section class="slide cover"><div>
+    <img src="i/lonelyplanet.jpg" width="100%"/>
+</div></section>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<section class="slide cover"><div>
+    <ul class="fz-l" style="background: #fff; padding-left: 40px;">
+        <li><a href="http://www.thecssninja.com/javascript/follow-up-60fps-scroll" target="_blank">thecssninja.com</a>, мешает Inspect element,
+            <br/> не кроссбраузерно</li>
+    </ul>
+    <img src="i/cssninjacode.jpg" width="100%"/>
+</div></section>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+<section class="slide cover"><div>
+    <img src="i/overlayinspect.png" width="100%"/>
+</div></section>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">60fps maintained by <a href="https://github.com/jurispukitis">jurispukitis</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<section class="slide cover h active"><div>
+    <h2 class="invert">Overlay поверх контента</h2>
+    <img src="i/overlay.png" width="100%">
+    <pre style="background: #fff; font-size: 16px;position: absolute; right: 15px;bottom: -5px;padding: 10px 50px; border: 10px solid #ccc;">
+        <code style="line-height: 18px;"><mark>#pointerOverlay</mark> {</code>
+            <code style="line-height: 18px;">    position: fixed;</code>
+            <code style="line-height: 18px;">    top: 0; right: 0; left: 0; bottom: 0;</code>
+            <code style="line-height: 18px;">    visibility: hidden;</code>
+            <code style="line-height: 18px;">    pointer-events: none;</code>
+            <code style="line-height: 18px;">    }</code>
 
-    
+        <code style="line-height: 18px;">    <mark>#pointerOverlay.__auto</mark> {</code>
+            <code style="line-height: 18px;">        visibility: visible;</code>
+            <code style="line-height: 18px;">        pointer-events: auto;</code>
+            <code style="line-height: 18px;">        }</code>
+    </pre>
+</div></section>
 
-  </body>
+<section class="slide"><div>
+    <p style="margin-bottom: 10px">jsperf <a href="http://jsperf.com/classnamevsclasslist">className vs classList</a></p>
+    <img src="i/FPSjs.png" width="100%"/>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Зачем нужен pointer-events если используется visibility?</h2>
+    <ul class="fz-l">
+        <li>Постоянно не меняется курсор если медленно скролируешь по кликабельной области (chrome, 60%)</li>
+    </ul>
+</div></section>
+<section class="slide"><div>
+    <h2>Приятное</h2>
+    <ul class="fz-l">
+        <li>visibility: visible/hidden (no repaints)!</li>
+        <li class="next">Не мешает Inspect Element!</li>
+        <li class="next">Все браузера</li>
+    </ul>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Результат!</h2>
+    <ul class="fz-l">
+        <li>В среднем +5 FPS (15%)</li>
+        <li class="next">Плавный скроллинг</li>
+    </ul>
+</div></section>
+
+<section class="slide shout"><div>
+    <h2 style="font-size: 90px;">Проблема<br/>большого DOMа</h2>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Проблема:</h2>
+    <ul class="fz-l">
+        <li>Огромный DOM</li>
+        <li class="next">Подгрузка данных на страницу</li>
+        <li class="next">Браузер не справляется с нагрузкой</li>
+    </ul>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Решение:</h2>
+    <ul class="fz-l">
+        <li>Прячем HTML <span class="next">в display: none;</span></li>
+        <li class="next">Не внутри viewport</li>
+        <li class="next">Flash нельзя прятать</li>
+    </ul>
+</div></section>
+
+<section class="slide cover h active"><div>
+    <img src="i/hidefeeds.jpg" width="100%">
+
+    <pre style="background: #fff; font-size: 18px;position: absolute; right: 15px; bottom: 50px; padding: 10px 50px; border: 10px solid #ccc;">
+        <code style="line-height: 18px;"><mark>.hide-feed-cnt > *</mark> {</code>
+            <code style="line-height: 18px;">    display: none;</code>
+            <code style="line-height: 18px;">    }</code>
+    </pre>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Тестирование</h2>
+    <ul class="fz-l">
+        <li>Разные машины</li>
+        <li class="next">Производительность</li>
+    </ul>
+</div></section>
+
+<section class="slide"><div>
+    <h2>И вот что мы получили:</h2>
+    <ul class="fz-l">
+        <li>Улучили FPS от 12-22 до 45-60</li>
+        <li class="next">На 30% меньше потребления памяти</li>
+        <li class="next">Довольные пользователи</li>
+    </ul>
+</div></section>
+
+
+<section class="slide"><div>
+    <h2>Нативный скролл быстрей</h2>
+    <ul class="fz-l">
+        <li>Запоминает отрисованных элементов</li>
+        <li class="next">На 30-50% меньше потребления памяти</li>
+        <li class="next">Поведение сколла</li>
+    </ul>
+</div></section>
+
+
+<section class="slide"><div>
+    <h2>Github</h2>
+    <ul class="fz-l">
+        <li><a href="#333" target="_blank">github.com/jurispukitis/block_hovers</a></li>
+        <li><a href="#333" target="_blank">github.com/jurispukitis/hide_html</a></li>
+    </ul>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Спасибо за внимание!</h2>
+    <ul>
+        <li><a href="mailto:juris.pukitis@odnoklassniki.ru">juris.pukitis@odnoklassniki.ru</a></li>
+        <li>Skype: jurispukitis-w</li>
+        <li>twitter: <a href="https://twitter.com/jur4eg">@jur4eg</a></li>
+    </ul>
+</div></section>
+
+
+<div class="progress"><div></div></div>
+<div id="pointerOverlay"></div>
+<script src="shower/shower.js"></script>
+
+
+<script>
+
+    var overlayTimer = 0,
+        hasClass = false,
+        pointerOverlay = document.getElementById('pointerOverlay');
+
+    function toggleOverlay() {
+        clearTimeout(overlayTimer);
+        if (!hasClass) {
+            pointerOverlay.classList.add("__auto");
+            hasClass = true;
+        }
+        overlayTimer = setTimeout(function() {
+            pointerOverlay.classList.remove("__auto");
+            hasClass = false;
+        }, 200);
+    }
+
+    window.addEventListener("scroll", toggleOverlay, false)
+
+</script>
+<!-- Powered by Shower presentation engine - Copyright © 2010–2013 Vadim Makeev — pepelsbey.net -->
+</body>
 </html>
